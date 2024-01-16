@@ -5,5 +5,6 @@ const accordianHeader = document.querySelectorAll(".accordian-header");
 });
 function HandleClick(event) {
   console.log(event.target.nextElementSibling);
+  console.log(event.target.nextElementSibling.scrollHeight);
   event.target.nextElementSibling.classList.toggle("is-active");
 }

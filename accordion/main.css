@@ -21,10 +21,15 @@ body {
   border-radius: 10px 10px 0px 0px;
 }
 .accordian-content {
-  padding: 20px;
+  padding: 0px 20px;
+  box-sizing: border-box;
   background-color: rgb(226, 226, 226);
   border-radius: 0px 0px 10px 10px;
+  height: 0px;
+  overflow: hidden;
+  transition: all 0.3s linear;
 }
 .is-active {
-  display: none;
+  height: auto;
+  padding: 20px;
 }
